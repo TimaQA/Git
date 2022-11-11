@@ -1,0 +1,70 @@
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git (Postman)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git (main)
+$ mkdir 1
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git (main)
+$ cd 1
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1 (main)
+$ mkdir a b c
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1 (main)
+$ ls -la
+total 0
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:40 ./
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:40 ../
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:40 a/
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:40 b/
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:40 c/
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1 (main)
+$ cd a
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1/a (main)
+$ touch 1.txt 2.txt 3.txt 1.json 2.json
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1/a (main)
+$ ls -la
+total 0
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:42 ./
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:40 ../
+-rw-r--r-- 1 Aran 197121 0 Nov 11 20:42 1.json
+-rw-r--r-- 1 Aran 197121 0 Nov 11 20:42 1.txt
+-rw-r--r-- 1 Aran 197121 0 Nov 11 20:42 2.json
+-rw-r--r-- 1 Aran 197121 0 Nov 11 20:42 2.txt
+-rw-r--r-- 1 Aran 197121 0 Nov 11 20:42 3.txt
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1/a (main)
+$ notepad 1.txt
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1/a (main)
+$ cd ../
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1 (main)
+$ mv /f/work/Portfolio/QA/Git/1/a/1.txt /f/work/Portfolio/QA/Git/1/b/1.txt
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1 (main)
+$ mv /f/work/Portfolio/QA/Git/1/a/1.json /f/work/Portfolio/QA/Git/1/b/1.json
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1 (main)
+$ ls -la
+total 0
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:40 ./
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:40 ../
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:47 a/
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:47 b/
+drwxr-xr-x 1 Aran 197121 0 Nov 11 20:40 c/
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1 (main)
+$ cp /f/work/Portfolio/QA/Git/1/a/2.txt /f/work/Portfolio/QA/Git/1/c/2.txt
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1 (main)
+$ cp /f/work/Portfolio/QA/Git/1/a/2.json /f/work/Portfolio/QA/Git/1/c/2copy.json
+
+Aran@DESKTOP-758N9I3 MINGW64 /f/work/Portfolio/QA/Git/1 (main)
+$ find -name 2.json
+./a/2.json
